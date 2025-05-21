@@ -1,0 +1,37 @@
+<!-- Save this as client.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Client Dashboard – Samuketi FS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Affordability Calculator</h2>
+    <form id="affordForm">
+      <label>Gross Monthly Income:</label>
+      <input type="number" id="income" required />
+
+      <label>Monthly Expenses:</label>
+      <input type="number" id="expenses" required />
+
+      <label>Existing Debt Repayments:</label>
+      <input type="number" id="debts" required />
+
+      <label>Requested Loan Amount:</label>
+      <input type="number" id="loanAmount" required />
+
+      <label>Loan Term (Months):</label>
+      <input type="number" id="term" required />
+
+      <button type="submit" class="btn">Check Affordability</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+    <a href="index.html" class="back-link">← Back to Login</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
